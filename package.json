@@ -1,0 +1,13 @@
+{
+  "name": "home_task-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "collection": "npx newman run API-Testing-Jenkins.postman_collection.json -e Dropbox_env.postman_environment.json",
+    "report": "npx newman run API-Testing-Jenkins.postman_collection.json -e Dropbox_env.postman_environment.json -r html",
+    "report-extra": "npx newman run API-Testing-Jenkins.postman_collection.json -e Dropbox_env.postman_environment.json -r htmlextra"
+  },
+  "author": "",
+  "license": "ISC"
+}
