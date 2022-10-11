@@ -27,8 +27,14 @@ This repo is a placeholder to maintain Dropbox API Postman Collection and Jenkin
 
 Because the file path would be invalid after sharing requests between different machines, Collection Runner would not support uploading file. Before running collection, it is essential to manually select file to be uploaded in the request body. In this collection, it is supposed that the request will upload a text file (.txt), so it is important to manually select a text file to run successfully the collection later.
 
-## Get Jenkins config file
+## Export Jenkins config file
 
 ```console
 java -jar jenkins-cli.jar -s http://JENKINS_USER:JENKINS_PASSWORD@JENKINS_IP:JENKINS_PORT get-job "JOB_NAME" > CONFIG_FILE
 ```
+
+## Reference:
+
+- Postman (https://www.postman.com/)
+- Jenkins (https://www.jenkins.io/)
+- Newman (https://www.npmjs.com/package/newman)
