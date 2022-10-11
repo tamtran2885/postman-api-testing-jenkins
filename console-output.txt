@@ -1,0 +1,51 @@
+Lanzada por el usuario Tam Tran
+Running as SYSTEM
+Ejecutando.en el espacio de trabajo C:\ProgramData\Jenkins\.jenkins\workspace\Dropbox-api-postman-collection
+[Dropbox-api-postman-collection] $ cmd /c call C:\Windows\TEMP\jenkins3414787799862142585.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Dropbox-api-postman-collection>npx newman run D:\\epam-course\\practices\\Home_tasks\\home_task-3\\API-Testing-Jenkins.postman_collection.json -e D:\\epam-course\\practices\\Home_tasks\\home_task-3\\Dropbox_env.postman_environment.json 
+newman
+
+API-Testing-Jenkins
+
+→ Upload File
+  POST https://content.dropboxapi.com/2/files/upload [200 OK, 891B, 847ms]
+  √  Successful POST request
+  √  Correct name is returned 
+  √  Check Json value of response
+  √  Check properties of response
+
+→ Get file's metadata
+  POST https://api.dropboxapi.com/2/files/get_metadata [200 OK, 815B, 287ms]
+  √  Successful POST request
+  √  Correct name is returned 
+  √  Check Json value of response
+  √  Check properties of response
+
+→ Delete File
+  POST https://api.dropboxapi.com/2/files/delete_v2 [200 OK, 830B, 801ms]
+  √  Successful POST request
+  √  Correct name is returned 
+  √  Check Json value of response
+  √  Check properties of response
+
+┌─────────────────────────┬─────────────────────┬────────────────────┐
+│                         │            executed │             failed │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│              iterations │                   1 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│                requests │                   3 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│            test-scripts │                   6 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│      prerequest-scripts │                   6 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│              assertions │                  12 │                  0 │
+├─────────────────────────┴─────────────────────┴────────────────────┤
+│ total run duration: 2.4s                                           │
+├────────────────────────────────────────────────────────────────────┤
+│ total data received: 1.18kB (approx)                               │
+├────────────────────────────────────────────────────────────────────┤
+│ average response time: 645ms [min: 287ms, max: 847ms, s.d.: 253ms] │
+└────────────────────────────────────────────────────────────────────┘
+Finished: SUCCESS
