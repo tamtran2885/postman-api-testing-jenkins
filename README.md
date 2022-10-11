@@ -27,6 +27,13 @@ This repo is a placeholder to maintain Dropbox API Postman Collection and Jenkin
 
 Because the file path would be invalid after sharing requests between different machines, Collection Runner would not support uploading file. Before running collection, it is essential to manually select file to be uploaded in the request body. In this collection, it is supposed that the request will upload a text file (.txt), so it is important to manually select a text file to run successfully the collection later.
 
+## Newman HTML Reporter
+
+```console
+newman run COLLECTION_JSON_FILE -r html
+newman run COLLECTION_JSON_FILE -r htmlextra
+```
+
 ## Export Jenkins config file
 
 ```console
