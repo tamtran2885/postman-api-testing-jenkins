@@ -21,6 +21,13 @@ java -jar jenkins.war
 
 - Create new item (New Item > Enter an item name > Choose type of project > click OK)
 - In Configuration page, add build step by executing Windows batch command > Save
+
+This is an example of Running postman collections using Newman in Jenkins
+
+```console
+npx newman run D:\\API-Testing-Jenkins.postman_collection.json -e D:\\Dropbox_env.postman_environment.json
+```
+
 - Click Buil Now to build the configuration
 
 ### Export test result
