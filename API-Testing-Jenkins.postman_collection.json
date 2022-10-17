@@ -262,22 +262,22 @@
 			},
 			{
 				"key": "clientSecret",
-				"value": "8uuds82ltcridy9",
+				"value": "{{App_secret}}",
 				"type": "string"
 			},
 			{
 				"key": "clientId",
-				"value": "ul7tgjbnq6u3r06",
+				"value": "{{App_key}}",
 				"type": "string"
 			},
 			{
 				"key": "accessTokenUrl",
-				"value": "https://api.dropboxapi.com/oauth2/token",
+				"value": "{{Access_token_url}}",
 				"type": "string"
 			},
 			{
 				"key": "authUrl",
-				"value": "https://www.dropbox.com/oauth2/authorize",
+				"value": "{{Auth_url}}",
 				"type": "string"
 			},
 			{
